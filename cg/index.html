@@ -5,7 +5,7 @@
   -->
 <!--*************************************************
 	* Coded by:										*				
-	* David Young - davidyoung@highspeed.guru    	*
+	* David Young - davidyoung@beyondthewire.life 	*
 	* Ver 2.0 9/9/2018								*
 	*************************************************-->
 <?php 
@@ -19,14 +19,6 @@
         <meta charset="UTF-8">
         <title>LVMAC Clinicians' Guide</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-        <!--
-  * The "meta viewport" tag (below) helps your app size appropriately to a device's screen.
-  * Note that the meta viewport approach is being phased out in favor of the @viewport CSS rule.
-  * For a quick overview of both, see this article:
-  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
-  * To see what happens, try the app on a real device with and without a "meta viewport" tag.
--->
 
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -43,13 +35,6 @@
 
         <link rel="stylesheet" href="css/old-android.css">
         <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-
-        <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-
-        <!-- Most third-party libraries should go here. References (below) are just examples to give you the general idea... -->
-        <!-- <script src="lib/ft/fastclick.js"></script> -->
 
         <script src="intelxdk.js"></script>
         <!-- phantom library, needed for XDK "legacy" container api calls -->
@@ -88,9 +73,6 @@
 	ga('send', 'pageview');
 
 	</script>
-        <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
 
         <div class="uwrap">
             <div class="upage" id="mainpage">
@@ -328,7 +310,7 @@
                                             <p>&nbsp;</p>
 											<div id="Question 4">      
 												<p><strong>What did you do?</strong></p>
-												<p>While the military jargon about jobs and titles may be confusing and intimidating, 
+												<p>While military jargon about jobs and titles may be confusing and intimidating, 
 												siimply asking what a veteran did while he or she was serving could provide important insights.&nbsp; 
 												If he/she does not want to talk about it, the person will tell you that and the question can be left lying.&nbsp; 
 												However, the advantage of asking the question can be enormous and most will appreciate that you are showing both professional diligence and concern.</p>
@@ -513,20 +495,26 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Six Questions Notes">      
-												<?php 
-													query_posts('page_id=7');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Six Questions Notes">      	      
+												<ul>
+													<li>When reviewing a patient’s health history it is important to ask about their veteran status.</li>
+													</ul>
+													<ul>
+													<li>Answers to the six questions will provide you with information helpful in understanding the patient’s’ medical problems and concerns; and in establishing the needed rapport and therapeutic partnership.</li>
+													</ul>
+													<ul>
+													<li>For the more recently returned veteran, developing social relationships in the community is a key social need for his/her well-being.&nbsp; The asking implies concern for his welfare and leads to a more helpful patient. If you are a veteran yourself, it might help to relate that fact</li>
+													</ul>
+													<ul>
+													<li>The resulting answers may also provide a basis for timely referral to specialized medical resources.</li>
+													</ul>
+													<ul>
+													<li>Not asking these questions may lead &nbsp;to a misdiagnosis; and an inability to track &nbsp;down useful veteran-related information and data.</li>
+													</ul>
+													<ul>
+													<li>The&nbsp;Military Health Risks by Military Service Era section&nbsp;provides specific illnesses of which to be aware.</li>
+													</ul>
+     											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -563,20 +551,17 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Military Health Risks by Military Service Era">      
-												<?php 
-													query_posts('page_id=59');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Military Health Risks by Military Service Era">  
+      											<p style="text-align: left;">
+												<strong>Note:</strong>
+												</p>
+											 The VA’s commonly recognized major “periods of war” (declared war and conflicts) plus the “Cold War”, 
+											 Bosnia and Herzegovina Humanitarian Operation and Camp LeJeune water contamination incident – the periods with 
+											 the greatest number of health issues associated – are listed in reverse chronological order. Therefore, 
+											 not all military operations (conflicts and expeditions) are listed. For example, the Lebanon (1982-1983), 
+											 Grenada (1983), and Panama (1989-1990) Conflicts and the Somalia (1992-1995) Humanitarian Operations are not listed. 
+											 However, some of the military health risks still apply.											
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -613,20 +598,24 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-										<div id="Other Potential Environmental Exposures">      
-										<?php 
-										query_posts('page_id=24');
-										the_post();
-										the_content();
-										/*
-										if (have_posts()) :
-										  while (have_posts()) :
-										  endwhile;
-										endif;
-										*/
-										wp_reset_query();
-										?>     
-										</div> <!-- word press content div end -->
+										<div id="Other Potential Environmental Exposures">         
+											<ul>
+											<li><strong><a href="http://www.publichealth.va.gov/exposures/categories/occupational-hazards.asp" target="_blank">Occupational Hazards</a>&nbsp; to include</strong></li>
+											</ul>
+											<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Asbestos</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Burn Pit Smoke</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Contaminated Water (benzene, trichloroethylene, vinyl chloride)</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Endemic Diseases</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Hexavalent Chromium</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbspIonizing &amp; Non-Ionizing Radiation</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Jet Fuel</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Lead</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Mustard Gas</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Nerve Agents</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Particulate Matter</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp Pesticides</strong><br>
+											<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; − &nbsp;&nbsp TCDD &amp; other dioxins</strong></p>
+										</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -664,19 +653,20 @@
                                         <div>
                                             <p>&nbsp;</p>
 												<div id="World War II(1941-1946)">      
-												<?php 
-												query_posts('page_id=22');
-												the_post();
-												the_content();
-												/*
-												if (have_posts()) :
-												  while (have_posts()) :
-												  endwhile;
-												endif;
-												*/
-												wp_reset_query();
-												?>     
-												</div> <!-- word press content div end -->
+												<p><strong><a href="http://www.va.gov/oaa/pocketcard/worldwar.asp?p=6" target="_blank">World War II (1941-1946):</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/cold_injury.asp" target="_blank">Cold Injury</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/chem_bio_rad_weapons.asp" target="_blank">Chemical Warfare Agent Experiments</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Exposure to Nuclear Weapons </a>(including testing or cleanup)</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/pow.asp" target="_blank">Former Prisoners of War</a></strong></li>
+													</ul>   										
+												</div>
 												<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -714,19 +704,20 @@
                                         <div>
                                             <p>&nbsp;</p>
 											<div id="Korean Conflict (1950-1955)">      
-												<?php 
-													query_posts('page_id=20');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+												<p><strong><a href="http://www.va.gov/oaa/pocketcard/korea.asp?p=5" target="_blank">Korean Conflict (1950-1955):</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/cold_injury.asp" target="_blank">Cold Injury</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/chem_bio_rad_weapons.asp" target="_blank">Chemical Warfare Agent Experiments</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Exposure to Nuclear Weapons</a> (including testing or cleanup)</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/pow.asp" target="_blank">Former Prisoners of War</a></strong></li>
+													</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -763,20 +754,47 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Vietnam Conflict (1961-1975)">      
-												<?php 
-													query_posts('page_id=18');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Vietnam Conflict (1961-1975)">
+												<p><strong><a href="http://www.va.gov/oaa/pocketcard/vietnam.asp?p=3" target="_blank">Vietnam Conflict (1961-1975):</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/agentorange/providers/index.asp" target="_blank">Agent Orange Exposure</a></strong></li>
+													</ul>
+													<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; –&nbsp;</strong><strong><a href="http://www.publichealth.va.gov/exposures/agentorange/diseases.asp">Commonly Associated Agent Orange Diseases</a></strong></p>
+													<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;–&nbsp;<a href="http://www.publichealth.va.gov/exposures/agentorange/birth-defects/spina-bifida.asp">Spina Bifida in Veterans’ Children</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/agentorange/birth-defects/children-women-vietnam-vets.asp" target="_blank">Birth Defects in Women Veterans’ Children</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/pow.asp" target="_blank">Former Prisoners of War</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.hepatitis.va.gov/provider/hbv/index.asp" target="_blank">Hepatitis B</a></strong></li>
+													</ul>
+													<ul>
+													<li><a href="http://phc.amedd.army.mil/topics/discond/hep/Pages/HepatitisB.aspx%20" target="_blank"><strong>Hepatitis B – Resource</strong> <strong>#2</strong></a></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.hepatitis.va.gov/provider/hcv/index.asp" target="_blank">Hepatitis C</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://phc.amedd.army.mil/topics/discond/hep/Pages/HepatitisB.aspx" target="_blank">Hepatitis C – Resource #2</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.hiv.va.gov/provider/" target="_blank">HIV/AIDS</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/sexual_trauma.asp" target="_blank">Military Sexual Trauma</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/ptsd.asp" target="_blank">PTSD Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/index.asp" target="_blank">PTSD Resource &nbsp;#2 (VA/DoD Clinical Practice Guidelines)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/guidelines/MH/sud/">Substance Abuse</a></strong></li>
+													</ul> 
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -813,20 +831,26 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Camp Lejeune Water Contamination (1957-1987)">      
-												<?php 
-													query_posts('page_id=16');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Camp Lejeune Water Contamination (1957-1987)">          
+												<p><strong><a href="http://www.publichealth.va.gov/exposures/camp-lejeune/" target="_blank">Camp Lejeune Water Contamination (1957-1987):</a></strong></p>
+													<ul>
+													<li><strong>Esophageal cancer</strong></li>
+													<li><strong>Breast cancer</strong></li>
+													<li><strong>Kidney cancer</strong></li>
+													<li><strong>Multiple myeloma</strong></li>
+													<li><strong>Renal toxicity</strong></li>
+													<li><strong>Female infertility</strong></li>
+													<li><strong>Scleroderma</strong></li>
+													<li><strong>Non-Hodgkin’s lymphoma</strong></li>
+													<li><strong>Lung cancer</strong></li>
+													<li><strong>Bladder cancer</strong></li>
+													<li><strong>Leukemia</strong></li>
+													<li><strong>Myelodysplastic syndromes</strong></li>
+													<li><strong>Hepatic steatosis</strong></li>
+													<li><strong>Miscarriage</strong></li>
+													<li><strong>Neurobehavioral effects</strong></li>
+													</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -864,19 +888,24 @@
                                         <div>
                                             <p>&nbsp;</p>
 											<div id="Cold War (1945-1990)">      
-												<?php 
-													query_posts('page_id=14');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+												<p><strong><a href="http://www.va.gov/oaa/pocketcard/coldwar.asp" target="_blank">Cold War (1945-1990):</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/agentorange/providers/index.asp" target="_blank">Agent Orange Exposure</a></strong></li>
+													</ul>
+													<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; –&nbsp;<a href="http://www.publichealth.va.gov/exposures/agentorange/diseases.asp" target="_blank">Commonly Associated Agent Orange Diseases</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/camp-lejeune/index.asp " target="_blank">Camp Lejeune Water Contamination</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/edgewood-aberdeen/index.asp" target="_blank">Chemical Warfare Agents Experiments at Aberdeen/Edgewood Arsenal</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/chem_bio_rad_weapons.asp" target="_blank">Chemical Warfare Agent Experiments</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Exposure to Nuclear Weapons </a>(including testing or cleanup)</strong></li>
+													</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -913,20 +942,58 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Persian Gulf Conflict/Gulf War/Desert Shield/Storm (1990-1991)">      
-												<?php 
-													query_posts('page_id=12');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Persian Gulf Conflict/Gulf War/Desert Shield/Storm (1990-1991)">            
+												<p><strong><a href="http://www.va.gov/oaa/pocketcard/gulfwar.asp?p=2" target="_blank">Persian Gulf Conflict / Gulf War / Desert Shield/Storm (1990-1991):<br>
+													</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.veteranshealth.org/Persian/als.html" target="_blank">Amyotrophic lateral sclerosis (ALS)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/gulfwar/sources/chem-bio-weapons.asp" target="_blank">Chemical or Biological Agents</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/depleted_uranium/index.asp" target="_blank">Depleted Uranium Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Depleted Uranium Resource #2</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong>Dermatological Issues</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/gulfwar/chronic-fatigue-syndrome.asp" target="_blank">Chronic Fatigue Syndrome</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/gulfwar/medically-unexplained-illness.asp" target="_blank">Chronic Multisymptom Illness (Gulf War Syndrome</a>)</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/guidelines/mr/mus/index.asp" target="_blank">Chronic Multisymptom Illness (Gulf War Syndrome) –&nbsp;Resource #2 (MUS)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/gulfwar/infectious_diseases.asp" target="_blank">Infectious Disease Diseases of the Gulf War</a> (e.g. Leishmaniasis and Malaria)</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/sexual_trauma.asp" target="_blank">Military Sexual Trauma</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/gulfwar/sources/oil-well-fires.asp" target="_blank">Oil Well Fires</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/ptsd.asp" target="_blank">PTSD Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/index.asp" target="_blank">PTSD Resource #2 (VA/DoD Clinical Practice Guidelines)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong>Reproductive Health Issues</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/guidelines/MH/sud/" target="_blank">Substance Abuse</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/vaccinations-medications.asp" target="_blank">Vaccinations and Medications</a></strong></li>
+													</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -963,20 +1030,15 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Bosnia and Herzegovina Humanitarian Operation (1992-1996)">      
-												<?php 
-													query_posts('page_id=10');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Bosnia and Herzegovina Humanitarian Operation (1992-1996)">
+												<p><strong>Bosnia and Herzegovina Humanitarian Operation (1992-1996):</strong></p>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/depleted_uranium/index.asp" target="_blank">Depleted Uranium Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Depleted Uranium Resource #2</a></strong></li>
+													</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1013,20 +1075,84 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="OIF/EF/OND Conflicts/Global War on Terrorism (2001 – Present)">      
-												<?php 
-													query_posts('page_id=4');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="OIF/EF/OND Conflicts/Global War on Terrorism (2001 – Present)">     
+												<p><strong><a href="http://www.va.gov/oaa/pocketcard/oefoif.asp" target="_blank">OEF (Operation Enduring Freedom – Afganistain /&nbsp;OIF (Operation Iraqi Freedom – Iraq) / OND (Operation New Dawn – Iraq) Conflicts/Global War on Terrorism (2001 – Present):</a></strong></p>
+													<ul>
+													<li><strong><a href="http://www.veteranshealth.org/GWOT/acineobacter.html" target="_blank">Acinetobacter&nbsp;</a><a style="color: #41a62a;" href="http://www.veteranshealth.org/GWOT/acineobacter.html" target="_blank">&nbsp;</a><a href="http://www.veteranshealth.org/GWOT/acineobacter.html" target="_blank">(multi-drug resistant)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong>Animal Bites/<a href="http://www.publichealth.va.gov/exposures/rabies/index.asp" target="_blank">Rabies</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong>Combined Penetrating, Blunt Trauma, Burn Injuries (Blast Injuries)</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/burnpits/index.asp" target="_blank">Burn Pits</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/gulfwar/chronic-fatigue-syndrome.asp" target="_blank">Chronic Fatigue Syndrome</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/cold_injury.asp" target="_blank">Cold Injury</a> (Afghanistan)</strong></li>
+													</ul>
+													<ul>
+													<li><strong>Dermatologic Issues</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/depleted_uranium/index.asp" target="_blank">Depleted Uranium Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Depleted Uranium Resource #2</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/hearing_impairment.asp" target="_blank">Hearing Impairment/Loss</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/infectious_diseases.asp" target="_blank">Infectious Diseases of SW Asia</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/index.asp" target="_blank">Mental Health Issues</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/sexual_trauma.asp" target="_blank">Military Sexual Trauma</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/ptsd.asp">PTSD Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/index.asp">PTSD Resource #2 (VA/DoD Clinical Practice Guidelines)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong>Reproductive Health Issues</strong></li>
+													</ul>
+													<ul>
+													<li><strong>Substance Abuse</strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/spinal_cord.asp" target="_blank">Spinal Cord Injury</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/toxic_fragments/" target="_blank">Toxic Embedded Fragments (shrapnel)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/traumatic_amputation.asp" target="_blank">Traumatic Amputation Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/guidelines/rehab/amp/index.asp" target="_blank">Traumatic Amputation&nbsp;Resource #2( VA/DoD Clinical Practice Guidelines)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/traumatic_brain_injury.asp" target="_blank">Traumatic Brain Injury Resource #1</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.healthquality.va.gov/guidelines/rehab/mtbi/index.asp" target="_blank">Traumatic Brain Injury&nbsp;Resource #2 (VA/DoD Clinical Practice Guidelines)</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/exposures/vaccinations-medications.asp" target="_blank">Vaccinations and Medications</a></strong></li>
+													</ul>
+													<ul>
+													<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/visual_impairment.asp" target="_blank">Vision Impairment/Loss</a></strong></li>
+													</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1063,20 +1189,10 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="About">      
-												<?php 
-													query_posts('page_id=105');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="About">
+												<p>The Lehigh Valley Military Affairs Council wishes to acknowledge the Department of Veterans Affairs for its <a href="http://www.va.gov/oaa/pocket_cards.asp" target="_blank"><em>Military Health History Pocketcard for Clinicians</em>,</a> which was the start point for this product.&nbsp; The <em>Clinicians’ Guide </em>&nbsp;takes advantage of the capabilities of the internet in providing a quick and reference tool to assist clinicians in relating to and diagnosing their military veteran patients – if information is properly collected and organized.</p>
+												<p>The Lehigh Valley Military Affairs Council also wishes to recognize Cohort 9, Team One, “Class of 2014″ The Wescoe School, Muhlenberg College, Allentown PA for all their hard work assessing, planning, and the initial development of this project.</p>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1095,20 +1211,18 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Bibliography">      
-												<?php 
-													query_posts('page_id=53');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Bibliography">
+												<p><strong>Bibliography</strong></p>
+												<p><em>Caring for War Wounded (OEF/OIF) – Veterans Health Initiatives.&nbsp; </em>Dept. of Veterans Affairs, n.d. Web. 18 June 2014. &lt;<a href="http://www.publichealth.va.gov/vethealthinitiative/oefoif.asp" target="_blank">http://www.publichealth.va.gov/vethealthinitiative/oefoif.asp</a>&gt;.</p>
+												<p><em>Disability Benefit Questionnaires – VA Claims Transformation Plan</em>. Dept. of Veterans Affairs, n.d. Web. 18 June 2014. &lt;<a href="http://benefits.va.gov/disabilityexams/" target="_blank">http://benefits.va.gov/disabilityexams/</a>&gt;.</p>
+												<p>“Hazardous Exposures and Birth Defects.” <em>Lehigh Valley Military Affairs Councils Blog</em>. N.p., n.d. Web. 18 June 2014. &lt;<a href="http://lvmac.wordpress.com/resources/hazardous_exposures/" target="_blank">http://lvmac.wordpress.com/resources/hazardous_exposures/</a>&gt;.</p>
+												<p><em>Military Exposures – Public Health</em>. Dept. of Veterans Affairs, n.d. Web. 18 June 2014. &lt;<a href="http://www.publichealth.va.gov/exposures/index.asp" target="_blank">http://www.publichealth.va.gov/exposures/index.asp</a>&gt;.</p>
+												<p><em>Military Health History Pocket Card for Clinicians – Office of Academic Affiliations</em>. Dept. of Veterans Affairs, n.d. Web. 18 June 2014.&nbsp; &lt;<a href="http://www.va.gov/oaa/pocketcard/" target="_blank">http://www.va.gov/oaa/pocketcard/</a>&gt;.</p>
+												<p><em>Patient Treatment – Public Health</em>. Dept. of Veterans Affairs, n.d. Web. 18 June 2014. &lt;<a href="http://www.publichealth.va.gov/patient-treatment.asp" target="_blank">http://www.publichealth.va.gov/patient-treatment.asp</a>&gt;.</p>
+												<p><em>VA/DoD Clinical Practice Guidelines Home</em>.&nbsp; Dept. of Veterans Affairs, n.d. Web. 18 June 2014. &lt; <a href="http://www.healthquality.va.gov/index.asp" target="_blank">http://www.healthquality.va.gov/index.asp</a>&gt;.</p>
+												<p><em>Veterans Health Council</em>. Vietnam Veterans of America, n.d. Web. 18 June 2014. &lt;<a href="http://www.veteranshealth.org/" target="_blank">http://www.veteranshealth.org/</a>&gt;.</p>
+												<p><em>Veterans Health Initiative – Public Health</em>. Dept of Veterans Affairs, n.d. Web. 18 June 2014. &lt;<a href="http://www.publichealth.va.gov/vethealthinitiative/index.asp" target="_blank">http://www.publichealth.va.gov/vethealthinitiative/index.asp</a>&gt;.</p>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1144,20 +1258,22 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="ALT Links">      
-												<?php 
-													query_posts('page_id=44');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="ALT Links">
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/site_search.asp">VA Portal</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/providers/index.asp&nbsp;">Exposures for Providers</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/4ways.asp&nbsp;">Four Ways to Look Up Exposures</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://lvmac.wordpress.com/resources/hazardous_exposures/">Hazardous Exposures</a></strong></li>
+												</ul>
+												<p>&nbsp;</p>
+												<p>&nbsp;</p>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1239,20 +1355,204 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="Index">      
-												<?php 
-													query_posts('page_id=55');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="Index">  
+												<ul>
+												<li><strong><a href="http://www.veteranshealth.org/GWOT/acineobacter.html">Acinetobacter (multi-drug resistant)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/agentorange.asp" target="_blank">Agent Orange Exposure</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong>-&nbsp;<a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/agentorange/diseases.asp" target="_blank">Commonly Associated Agent Orange Diseases</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong>-&nbsp;<a style="font-style: normal;" href="http://www.publichealth.va.gov/PUBLICHEALTH/exposures/agentorange/conditions/spina_bifida.asp" target="_blank">Spina Bifida in Veterans’ Children</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong>-&nbsp;<a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/agentorange/militaryexposure.asp" target="_blank">Korea and various stateside and overseas locations</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.veteranshealth.org/Persian/als.html" target="_blank">Amyotrophic lateral sclerosis (ALS)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong>Animal Bites/<a href="http://www.publichealth.va.gov/exposures/rabies/index.asp" target="_blank">Rabies</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://lvmac.wordpress.com/resources/hazardous_exposures/#Birth%20Defects" target="_blank">Birth Defects in Women Veterans’ Children</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/burnpits/index.asp" target="_blank">Burn Pits</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/camp-lejeune/index.asp" target="_blank">Camp Lejeune Water Contamination</a></strong></li>
+												</ul>
+												<ul>
+												<li><a href="http://www.publichealth.va.gov/exposures/categories/warfare-agents.asp" target="_blank"><strong>Chemical or Biological Agents</strong></a></li>
+												</ul>
+												<ul>
+												<li><a href="http://www.warrelatedillness.va.gov/research/publications/radiation-chemical-agents-chemistry-biology.asp" target="_blank"><strong>Chemical or Biological Agents</strong></a> <strong>- Resource #2</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/edgewood-aberdeen/index.asp" target="_blank">Chemical Warfare Agents Experiments at Aberdeen/Edgewood Arsenal</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/chem_bio_rad_weapons.asp" target="_blank">Chemical Warfare Agent Experiments</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/gulfwar/medically-unexplained-illness.asp" target="_blank">Chronic Multisymptom Illness (Gulf War Syndrome)</a>;&nbsp; <a style="font-style: normal;" href="http://www.healthquality.va.gov/guidelines/mr/mus/index.asp" target="_blank">Resource #2 (MUS)</a></strong></li>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/cold_injury.asp" target="_blank">Cold Injury</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.va.gov/oaa/pocketcard/coldwar.asp" target="_blank">Cold War Health Risks</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong>Combined Penetrating, Blunt Trauma, Burn Injuries (Blast Injuries)</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/depleted_uranium/index.asp" target="_blank">Depleted Uranium Resource #1;</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Depleted Uranium Resource #2</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong>Dermatologic Issues</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://benefits.va.gov/disabilityexams/" target="_blank">Disability Benefits Questionnaires (DBQ)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/radiation.asp" target="_blank">Exposure to Nuclear Weapons</a> (including testing or cleanup)</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.va.gov/oaa/pocketcard/gulfwar.asp?p=2" target="_blank">Gulf War Health Risks</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.veteranshealth.org/Persian/gulf_illness.html" target="_blank">Gulf War Illness</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/gulfwar/index.asp" target="_blank">Gulf War Veterans’ Illnesses</a>;&nbsp; <a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/gulfwar/providers/diagnosis-treatment.asp" target="_blank">Diagnosis and Treatment of Gulf War Illnesses</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/gulfwar/medically-unexplained-illness.asp" target="_blank">Gulf War Syndrome</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/heat-injuries/index.asp" target="_blank">Heat Injuries</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.hepatitis.va.gov/provider/hbv/index.asp" target="_blank">Hepatitis B</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://phc.amedd.army.mil/topics/discond/diseases/Pages/HepatitisB.aspx" target="_blank">Hepatitis B</a>&nbsp;– Resource #2</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.hepatitis.va.gov/provider/hcv/index.asp" target="_blank">Hepatitis C</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://phc.amedd.army.mil/topics/discond/diseases/Pages/HepatitisC.aspx" target="_blank">Hepatitis C</a>&nbsp;– Resource #2</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.hiv.va.gov/provider/" target="_blank">HIV/AIDS</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/vaccinations-medications.asp" target="_blank">Vaccinations and Medications</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/infectious_diseases.asp" target="_blank">Infectious Diseases of SW Asia</a> (i.e. Leishmaniasis)</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/gulfwar/infectious_diseases.asp" target="_blank">Infectious Diseases of the Gulf War </a>(i.e. Leishmaniasis and Malaria)</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.va.gov/oaa/pocketcard/korea.asp?p=5" target="_blank">Korean War Health Risks</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.healthquality.va.gov/index.asp" target="_blank">Mental Health Issues</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/index.asp" target="_blank">Military Exposures</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/sexual_trauma.asp" target="_blank">Military Sexual Trauma</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/mustardgas/index.asp" target="_blank">Mustard Gas</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/noise/index.asp" target="_blank">Noise Exposures</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/radiation.asp" target="_blank">Nuclear Weapons Testing</a> (Atomic Veterans); <a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/radiation/healthcare_providers.asp" target="_blank">other Provider Resources</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/gulfwar/sources/oil-well-fires.asp" target="_blank">Oil Well Fires</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.va.gov/oaa/pocketcard/oefoif.asp" target="_blank">OIF/OEF/OND (Global War on Terrorism) Era Health Risks</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/wars-operations/iraq-war.asp" target="_blank">Operation Enduring Freedom/Operation Iraqi Freedom (OEF/OIF) Hazardous</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/wars-operations/iraq-war.asp" target="_blank">Exposures</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/categories/occupational-hazards.asp" target="_blank">Other Potential Environmental Exposures</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="line-height: 1.5;" href="http://www.publichealth.va.gov/exposures/shad/index.asp" target="_blank">Project 112/Project SHAD</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a href="http://www.publichealth.va.gov/vethealthinitiative/ptsd.asp" target="_blank">PTSD Resource #1</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="line-height: 1.5;" href="http://www.healthquality.va.gov/index.asp" target="_blank">PTSD Resource #2 (VA/DoD Clinical Practice Guidelines)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="line-height: 1.5;" href="http://www.publichealth.va.gov/exposures/rabies/index.asp" target="_blank">Rabies</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="line-height: 1.5;" href="http://www.publichealth.va.gov/exposures/radiation/providers/" target="_blank">Radiation Exposure</a><span style="line-height: 1.5;">; <a style="line-height: 1.5;" href="http://www.publichealth.va.gov/exposures/radiation/index.asp" target="_blank">Radiation</a></span></strong></li>
+												</ul>
+												<ul>
+												<li><strong>Reproductive Health Issues</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/agentorange/birth-defects/spina-bifida.asp" target="_blank">Spina Bifida in Veterans’ Children</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/spinal_cord.asp" target="_blank">Spinal Cord Injury</a></strong></li>
+												</ul>
+												<ul>
+												<li><a href="http://www.drugabuse.gov/publications/drugfacts/substance-abuse-in-military%20"><strong>Substance Abuse</strong></a></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/exposures/toxic_fragments/" target="_blank">Toxic Embedded Fragments (shrapnel)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/traumatic_amputation.asp" target="_blank">Traumatic Amputation Resource #1</a>; <a style="font-style: normal;" href="http://www.healthquality.va.gov/guidelines/rehab/amp/index.asp" target="_blank">Resource #2( VA/DoD Clinical Practice Guidelines)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/traumatic_brain_injury.asp" target="_blank">Traumatic Brain Injury Resource #1</a>;</strong></li>
+												</ul>
+												<ul>
+												<li><strong><a href="http://www.healthquality.va.gov/guidelines/rehab/mtbi/index.asp" target="_blank">Traumatic Brain Injury&nbsp;Resource #2 (VA/DoD Clinical Practice Guidelines)</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.healthquality.va.gov/index.asp" target="_blank">VA/DoD Evidence Based Clinical Practices</a></strong></li>
+												</ul>
+												<ul>
+												<li style="color: #333333;"><strong><a href="http://www.publichealth.va.gov/site_search.asp">VA Portal</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.va.gov/oaa/pocketcard/vietnam.asp?p=3" target="_blank">Vietnam War Health Risks</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.publichealth.va.gov/vethealthinitiative/visual_impairment.asp" target="_blank">Vision Impairment/Loss</a></strong></li>
+												</ul>
+												<ul>
+												<li><strong><a style="font-style: normal;" href="http://www.va.gov/oaa/pocketcard/worldwar.asp" target="_blank">World War II Health Risks</a></strong></li>
+												</ul>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1290,19 +1590,15 @@
                                         <div>
                                            <p>&nbsp;</p>
 											<div id="DBQ">      
-												<?php 
-													query_posts('page_id=51');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+												<p>You may encounter veterans who wish you to use a <strong><a href="http://benefits.va.gov/disabilityexams/" target="_blank">Disability Benefits Questionnaire</a></strong> .&nbsp; They may be seeking a<strong> <a href="http://benefits.va.gov/COMPENSATION/dbq_providerinstruct.asp" target="_blank">private evaluation</a></strong> for what they believe is a service-connected injury, which is allowed by the VA, in an effort to receive VA service-connected compensation or, at least, permanent VA health care for the condition.&nbsp; Even if they do not request you use the form for this sort of examination, you should do so.</p>
+												<p>Originally developed for &nbsp;compensation examinations by either VA or private health care providers in an effort to improve the quality of examinations needed for “Fully Developed Claims”, these forms have an additional use in that they allow for a thorough examination of a suspected condition.&nbsp; The forms are downloadable and found by<strong> <a href="http://benefits.va.gov/COMPENSATION/dbq_ListByDBQFormName.asp" target="_blank">form name</a> </strong>or by <strong><a href="http://benefits.va.gov/COMPENSATION/dbq_ListBySymptom.asp" target="_blank">symptom.</a></strong></p>
+												<p>&nbsp;</p>
+												<p><strong>Forms</strong></p>
+												<p><strong><a href="http://benefits.va.gov/disabilityexams/" target="_blank">Disability Benefits Questionnaire</a></strong></p>
+												<p><strong><a href="http://benefits.va.gov/COMPENSATION/dbq_providerinstruct.asp" target="_blank">Private Evaluation Forms</a></strong></p>
+												<p><strong><a href="http://benefits.va.gov/COMPENSATION/dbq_ListByDBQFormName.asp" target="_blank">Forms By: Form Name</a></strong></p>
+												<p><strong><a href="http://benefits.va.gov/COMPENSATION/dbq_ListBySymptom.asp" target="_blank">Forms By: Symptom</a></strong></p>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
@@ -1339,20 +1635,11 @@
                                         <div class="widget-container right-receptacle"></div>
                                         <div>
                                             <p>&nbsp;</p>
-											<div id="VA/DoD Evidenced-Based Clinical Practices">      
-												<?php 
-													query_posts('page_id=49');
-													the_post();
-													the_content();
-													/*
-													if (have_posts()) :
-													while (have_posts()) :
-													endwhile;
-													endif;
-													*/
-													wp_reset_query();
-												?>     
-											</div> <!-- word press content div end -->
+											<div id="VA/DoD Evidenced-Based Clinical Practices">
+												<p>The VA/DoD&nbsp;Evidence-Based Practice Guideline Work Group (EBPWG) was established to advise the VA/DoD Health Executive Council (HEC) on the use of clinical and epidemiological evidence to improve the health of the population across the Veterans Health Administration (VHA) and Military Health System.&nbsp;The work group was first chartered in 2004.</p>
+												<p>&nbsp;</p>
+												<p>As clinical practices are developed, they are published on the <strong><a href="http://www.healthquality.va.gov/index.asp" target="_blank">VA/DoD Clinical Practice Guidelines website.&nbsp;</a></strong></p>
+											</div>
 										<p>&nbsp;</p>
                                         </div>
                                     </div><span class="uib_shim"></span>
